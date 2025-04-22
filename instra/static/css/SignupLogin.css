@@ -1,0 +1,56 @@
+body{
+
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+
+    border:2px solid rgb(3, 3, 3);
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 6%;
+
+}
+.logo{
+
+    /* border:2px solid green; */
+    text-align: center;
+}
+.logo img{
+
+    width: 100px;
+    margin: 0;
+}
+
+.logo h2{
+
+    margin: 0;
+}
+.heading{
+    text-align: center;
+
+}
+.data{
+
+    text-align: center;
+}
+.data input{
+
+    margin: 10px;
+    width: 50%;
+    height: 30px;
+    padding: 8px;
+    border-radius: 5px;
+}
+#btn{
+
+    background-color: rgb(130, 173, 230);
+    font-weight: 900;
+}
+#btn:hover{
+
+    cursor: pointer;
+}

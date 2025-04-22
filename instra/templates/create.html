@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+
+<form method="post" action="/post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <input type="file" name="images" required>
+    <br>
+    <input type="text" name="desc">
+    <br>
+    <input type="submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="static/css/SignupLogin.css" type="text/css">
+</head>
+<body>
+{% if messages %}
+{% for i in messages %}
+<script>alert("{{ i }}");</script>
+{% endfor %}
+{% endif %}
+    <form method="post" action="/checklogin">
+        {% csrf_token %}
+    <div class="main">
+        <div class="logo">
+            <img src="static/img/instgram-logo.png">
+            <h2>Instgram</h2>
+        </div>
+
+        <div class="heading">
+            <h1>Sign In</h1>
+        </div>
+
+        <div class="data">
+            
+            <input type="text" placeholder="Enter Email Id or User Id" name="email" required>
+            <br>
+            <input type="password" placeholder="Password" minlength="8" name="password" required>
+            <br>
+            <a href="/signupPage">I Don't Have An Acoount</a><br>
+            <input type="submit" value="Login" id="btn">
+        </div>
+    </div>
+</form>
+</body>
+</html>
